@@ -49,15 +49,15 @@ function squareAll(items) {
 ```javascript
 const store = createStore(counter);
 ```
-* The store has three important methods:
+## The store has three important methods:
   1. The first is **getState()** and it retrieves the current state of the redux store;
 ```javascript
 console.log(store.getStore()); // this will print the initial state of your application
-```
+```    
   2. The second and wth most commonly used is called **dispatch** and it lets you dispatch **actions** to change the state of our application.
 ```javascript
 store.dispatch({ type: 'INCREMENT' });
-```
+```  
   3. The third Redux store method is called **subscribe**. It lets us register a callback that the Redux store will call any time an action has been dispatched, so that you can update the UI of your application. It will reflect the current application state.  
 ```javascript
 const render = () => ReactDOM.render(
